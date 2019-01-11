@@ -64,7 +64,11 @@ void test()
 	   case EMPTY:
 		   empty_infrom(&xinxi);
 		   break;
+	   case SORT:
+		   sort_infrom(&xinxi);
+		   break;
 	   case EIXT:
+		   save_infrom(&xinxi);
 		   printf("ÍË³ö³É¹¦£¡\n");
 		   break;
 	   default:
@@ -72,12 +76,13 @@ void test()
 		   break;
 	   }
    } while (input);
-
+	
 }
 int main()
 {
 	system("color F0");
 	test();
+	
 	system("pause");
 	return 0;
 }

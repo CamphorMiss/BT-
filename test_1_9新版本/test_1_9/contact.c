@@ -2,9 +2,23 @@
 #include"CONTACT.H"
 
 void initial_infrom(para* pc)
-{
-pc->sz=0;
-memset(pc->inf,0,sizeof(pc->inf));
+{ 
+	peoin * ptr=NULL;
+    pc->sz=0;
+//memset(pc->inf,0,sizeof(pc->inf));
+//动态内存
+ 
+  ptr=(peoin *)calloc(3,3*sizeof(peoin));
+  if(ptr==NULL)
+  {
+      exit(1);   
+  }
+  else
+  {
+  pc->inf = ptr;
+  pc->capacity=3;
+  }
+  copy_infrom(pc);
 }
 void show_infrom(para*pc)
 {
@@ -15,7 +29,7 @@ void show_infrom(para*pc)
       printf("%-5s\t",pc->inf[i].name);
 	  printf("%-4s\t",pc->inf[i].sex);
 	  printf("%-3d\t",pc->inf[i].age);
-	  printf("%-12d\t",pc->inf[i].tel);
+	  printf("%-12s\t",pc->inf[i].tel);
 	  printf("%-20s\t",pc->inf[i].addr);
 	  printf("\n");
 }
@@ -71,6 +85,30 @@ void search_infrom(para*pc)
 	  printf("你所查找的联系人不存在！\n");
 	}
 }
+void sort_infrom(para *pc)
+{
+	//以首字母升序排列
+	int i=0;
+	int j=0;
+	peoin tmp;
+	int n=pc->sz;
+	for(i=0;i<n-1;i++)
+	{
+		for(j=0;j<n-1-i;j++)
+		{
+			if(strcmp(pc->inf [i].name,pc->inf[i+1].name)>0)
+			{
+
+				tmp=pc->inf[i];
+				pc->inf[i]=pc->inf[i+1];
+				pc->inf[i+1]=tmp;
+			}
+		}
+	
+	}
+
+
+}
 void modify_infrom(para *pc)//修改
 {
   //找到他
@@ -90,7 +128,7 @@ void modify_infrom(para *pc)//修改
 		printf("请输入年龄:> ");
 		scanf("%d",&(pc->inf[i].age));
 		printf("请输入电话号:> ");
-		scanf("%d",pc->inf[i].tel);
+		scanf("%s",pc->inf[i].tel);
 		printf("请输入地址:> ");
 		scanf("%s",pc->inf[i].addr);
 		break;
@@ -107,7 +145,10 @@ void empty_infrom(para*pc)//清空所有联系人的信息
 	printf("**********0.     NO     ************\n");
     scanf("%d",&opion);
 	if(opion==1){
-		initial_infrom((para*)&(pc->inf[0]));
+		free(pc);
+		pc=NULL;
+		pc->sz=0;
+		pc->capacity=3;
 		printf("清空完成>\n");
 	}
 	else
@@ -116,31 +157,97 @@ void empty_infrom(para*pc)//清空所有联系人的信息
 	 return;
 	}
 }
-
+int  check_capacity(para*pc)
+{
+	if(pc->sz==pc->capacity)
+	{
+      //需要增容
+		peoin* ptr=NULL;
+		ptr=realloc(pc->inf,(pc->capacity+2)*sizeof(peoin));
+			if(ptr!=NULL)
+			{
+                 
+				 pc->capacity+=2;
+				 printf("增容成功！\n");
+                 return 1;
+			}
+			return 0;
+	}		
+	return 1;	
+	
+}
 void ADD_infrom(para*pc)
 {
 //首先，判断是否满了，若满了，则无法添加
-	if(pc->sz==NUM)
+	/*if(pc->sz==NUM)静态内存
 		{
 		printf("通讯录已满，无法添加！\n");
 		return;
+	}*/
+//动态内存开辟
+	int ret=check_capacity(pc);
+	
+	if(ret==0){
+         printf("增容失败！\n");
+		 exit(1);
+
 	}
 	//printf("%-5s\t%s-4\t%s-3\t%s-12\t%s-20\n","姓名","性别","年龄","电话","地址");
 	//添加通讯录信息
-	else
-	{
-		printf("请输入姓名:> ");
+	if(ret==1){
+		
+        printf("请输入姓名:> ");
 		scanf("%s",pc->inf[pc->sz].name);
 		printf("请输入性别:> ");
 		scanf("%s",pc->inf[pc->sz].sex);
 		printf("请输入年龄:> ");
 		scanf("%d",&(pc->inf[pc->sz].age));
 		printf("请输入电话号:> ");
-		scanf("%d",pc->inf[pc->sz].tel);
+		scanf("%s",pc->inf[pc->sz].tel);
 		printf("请输入地址:> ");
 		scanf("%s",pc->inf[pc->sz].addr);
 		pc->sz++;
 
 	}
 	
+}
+void save_infrom(para *pc)
+{
+    FILE*pf=fopen("save_infrom.txt","wb");
+	int i=0;
+	if(pf==NULL)
+	{
+		ferror("save_infrom");
+		return;
+	}
+   //用文件的形式保存通讯录信息
+   for(i=0;i<pc->sz;i++)
+   {
+    fwrite(&(pc->inf[i]),sizeof(peoin),1,pf);
+   }
+   fclose(pf);
+   pf=NULL;
+   printf("保存信息完成！\n");
+}
+
+
+void copy_infrom(para*pc)
+{
+	FILE *pf=fopen("sava_infrom.txt","rb");
+	int i=0;
+	peoin temp={0};
+	if(pf==NULL)
+	{
+		ferror("copy_infrom");
+		return;
+	}
+	//把上一次保存的信息复制过来
+	while(fread(&temp,sizeof(peoin),1,pf))
+	{
+		  check_capacity(pc);
+		  pc->inf[pc->sz]=temp;
+		  pc->sz++;
+	}
+	fclose(pf);
+	pf=NULL;
 }
