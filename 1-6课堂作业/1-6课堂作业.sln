@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1-6课堂作业", "1-6课堂作业\1-6课堂作业.vcproj", "{F663FC47-032C-4AD6-B547-A83E2D3D98FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F663FC47-032C-4AD6-B547-A83E2D3D98FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F663FC47-032C-4AD6-B547-A83E2D3D98FC}.Debug|Win32.Build.0 = Debug|Win32
+		{F663FC47-032C-4AD6-B547-A83E2D3D98FC}.Release|Win32.ActiveCfg = Release|Win32
+		{F663FC47-032C-4AD6-B547-A83E2D3D98FC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
