@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1_21 删除链表中所有给定的val节点", "1_21 删除链表中所有给定的val节点\1_21 删除链表中所有给定的val节点.vcproj", "{442F8F1F-A66E-48F7-B65F-253A60B2324F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{442F8F1F-A66E-48F7-B65F-253A60B2324F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{442F8F1F-A66E-48F7-B65F-253A60B2324F}.Debug|Win32.Build.0 = Debug|Win32
+		{442F8F1F-A66E-48F7-B65F-253A60B2324F}.Release|Win32.ActiveCfg = Release|Win32
+		{442F8F1F-A66E-48F7-B65F-253A60B2324F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
