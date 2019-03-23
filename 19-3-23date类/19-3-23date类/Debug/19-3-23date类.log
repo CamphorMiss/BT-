@@ -1,0 +1,5 @@
+﻿  date.cpp
+c:\users\administrator\source\repos\19-3-23date类\19-3-23date类\date.cpp(72): error C2678: 二进制“-”: 没有找到接受“const Date”类型的左操作数的运算符(或没有可接受的转换)
+  c:\users\administrator\source\repos\19-3-23date类\19-3-23date类\date.cpp(44): note: 可能是“int Date::operator -(const Date &)”
+  c:\users\administrator\source\repos\19-3-23date类\19-3-23date类\date.cpp(39): note: 或    “Date Date::operator -(int)”
+  c:\users\administrator\source\repos\19-3-23date类\19-3-23date类\date.cpp(72): note: 尝试匹配参数列表“(const Date, const Date)”时
