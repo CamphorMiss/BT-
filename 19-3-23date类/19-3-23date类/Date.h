@@ -17,6 +17,8 @@ public:
 	Date operator++(int);
 	Date& operator--();
 	Date operator--(int);
+	bool IsLeapyear(int year);
+	int GetTrueDay(int year,int month);
 	bool operator>(const Date& d)const;
 	bool operator>=(const Date& d)const;
 	bool operator<(const Date& d)const;
