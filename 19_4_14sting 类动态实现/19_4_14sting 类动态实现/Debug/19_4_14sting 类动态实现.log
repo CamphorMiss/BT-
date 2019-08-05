@@ -1,7 +1,0 @@
-﻿  19_4_14sting 类动态实现.cpp
-d:\我的文档\vs2017\19_4_14sting 类动态实现\19_4_14sting 类动态实现\19_4_14sting 类动态实现.cpp(52): warning C4018: “>=”: 有符号/无符号不匹配
-d:\我的文档\vs2017\19_4_14sting 类动态实现\19_4_14sting 类动态实现\19_4_14sting 类动态实现.cpp(115): warning C4018: “<”: 有符号/无符号不匹配
-d:\我的文档\vs2017\19_4_14sting 类动态实现\19_4_14sting 类动态实现\19_4_14sting 类动态实现.cpp(144): error C2561: “bit::operator <<”: 函数必须返回值
-  d:\我的文档\vs2017\19_4_14sting 类动态实现\19_4_14sting 类动态实现\19_4_14sting 类动态实现.cpp(141): note: 参见“bit::operator <<”的声明
-d:\我的文档\vs2017\19_4_14sting 类动态实现\19_4_14sting 类动态实现\19_4_14sting 类动态实现.cpp(149): error C2561: “bit::operator >>”: 函数必须返回值
-  d:\我的文档\vs2017\19_4_14sting 类动态实现\19_4_14sting 类动态实现\19_4_14sting 类动态实现.cpp(146): note: 参见“bit::operator >>”的声明
