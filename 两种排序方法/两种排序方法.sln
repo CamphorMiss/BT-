@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "两种排序方法", "两种排序方法\两种排序方法.vcproj", "{BC2A1DDB-2F85-456A-AF18-7E176528BAB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC2A1DDB-2F85-456A-AF18-7E176528BAB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC2A1DDB-2F85-456A-AF18-7E176528BAB7}.Debug|Win32.Build.0 = Debug|Win32
+		{BC2A1DDB-2F85-456A-AF18-7E176528BAB7}.Release|Win32.ActiveCfg = Release|Win32
+		{BC2A1DDB-2F85-456A-AF18-7E176528BAB7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
