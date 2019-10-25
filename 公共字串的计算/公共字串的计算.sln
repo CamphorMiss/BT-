@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "公共字串的计算", "公共字串的计算\公共字串的计算.vcproj", "{0DDA45C7-002E-448A-BB0B-4BB137F468E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DDA45C7-002E-448A-BB0B-4BB137F468E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0DDA45C7-002E-448A-BB0B-4BB137F468E4}.Debug|Win32.Build.0 = Debug|Win32
+		{0DDA45C7-002E-448A-BB0B-4BB137F468E4}.Release|Win32.ActiveCfg = Release|Win32
+		{0DDA45C7-002E-448A-BB0B-4BB137F468E4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
