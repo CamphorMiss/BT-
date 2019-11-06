@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "每日一练-组队竞赛", "每日一练-组队竞赛\每日一练-组队竞赛.vcproj", "{AA9AB453-4300-48ED-94B8-53E1D9724D0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA9AB453-4300-48ED-94B8-53E1D9724D0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA9AB453-4300-48ED-94B8-53E1D9724D0C}.Debug|Win32.Build.0 = Debug|Win32
+		{AA9AB453-4300-48ED-94B8-53E1D9724D0C}.Release|Win32.ActiveCfg = Release|Win32
+		{AA9AB453-4300-48ED-94B8-53E1D9724D0C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
