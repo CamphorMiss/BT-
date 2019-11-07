@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二维数组查找", "二维数组查找\二维数组查找.vcproj", "{1B5861DC-5E7C-427B-B251-C7E65D0774AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5861DC-5E7C-427B-B251-C7E65D0774AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1B5861DC-5E7C-427B-B251-C7E65D0774AD}.Debug|Win32.Build.0 = Debug|Win32
+		{1B5861DC-5E7C-427B-B251-C7E65D0774AD}.Release|Win32.ActiveCfg = Release|Win32
+		{1B5861DC-5E7C-427B-B251-C7E65D0774AD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
