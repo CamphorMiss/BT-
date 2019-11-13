@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "旋转数组的最小值", "旋转数组的最小值\旋转数组的最小值.vcproj", "{4A3BADA4-B5DE-457F-9A48-C75A4AD1745A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A3BADA4-B5DE-457F-9A48-C75A4AD1745A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4A3BADA4-B5DE-457F-9A48-C75A4AD1745A}.Debug|Win32.Build.0 = Debug|Win32
+		{4A3BADA4-B5DE-457F-9A48-C75A4AD1745A}.Release|Win32.ActiveCfg = Release|Win32
+		{4A3BADA4-B5DE-457F-9A48-C75A4AD1745A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
