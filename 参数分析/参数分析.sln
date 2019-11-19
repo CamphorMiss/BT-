@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "参数分析", "参数分析\参数分析.vcproj", "{75B69998-CB56-4C80-B34B-E1FC20D671F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75B69998-CB56-4C80-B34B-E1FC20D671F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75B69998-CB56-4C80-B34B-E1FC20D671F7}.Debug|Win32.Build.0 = Debug|Win32
+		{75B69998-CB56-4C80-B34B-E1FC20D671F7}.Release|Win32.ActiveCfg = Release|Win32
+		{75B69998-CB56-4C80-B34B-E1FC20D671F7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
