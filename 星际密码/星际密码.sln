@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "星际密码", "星际密码\星际密码.vcproj", "{92B221F2-4ABE-42AB-B609-5DA5DAEF0168}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92B221F2-4ABE-42AB-B609-5DA5DAEF0168}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92B221F2-4ABE-42AB-B609-5DA5DAEF0168}.Debug|Win32.Build.0 = Debug|Win32
+		{92B221F2-4ABE-42AB-B609-5DA5DAEF0168}.Release|Win32.ActiveCfg = Release|Win32
+		{92B221F2-4ABE-42AB-B609-5DA5DAEF0168}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
